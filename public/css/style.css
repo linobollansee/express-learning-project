@@ -1,5 +1,82 @@
-body { font-family: Arial, sans-serif; margin: 1rem; }
-header { border-bottom: 1px solid #ddd; margin-bottom: 1rem; padding-bottom: .5rem; }
-table { border-collapse: collapse; width: 100%; }
-table th, table td { border: 1px solid #ddd; padding: .5rem; text-align: left; }
-footer { margin-top: 2rem; color: #666; font-size: .9rem; }
+/* 
+  The <body> element is the root container for all visible page content.
+  This rule sets global styles that affect the entire page.
+*/
+body {
+  /* Sets the font used for all text on the page. 
+     'Arial' is the first choice; if not available, 
+     the browser will fall back to any sans-serif font. */
+  font-family: Arial, sans-serif;
+
+  /* Adds space between the content and the edges of the browser window.
+     '1rem' means "1 times the root element's font size" — 
+     a relative, responsive measurement. */
+  margin: 1rem;
+}
+
+
+/*
+  The <header> section usually contains the title, logo, or navigation.
+  This rule styles that top section to visually separate it from the rest of the page.
+*/
+header {
+  /* Adds a light gray line underneath the header, creating a clear divider. */
+  border-bottom: 1px solid #ddd;
+
+  /* Adds space below the header element so that following content 
+     doesn’t stick too close. */
+  margin-bottom: 1rem;
+
+  /* Adds internal space inside the header (below its content), 
+     improving readability. */
+  padding-bottom: .5rem;
+}
+
+
+/*
+  Tables are used to display tabular data (rows and columns).
+  This rule controls the overall look of the table element.
+*/
+table {
+  /* Removes the space between table cells' borders so they appear as single lines.
+     Without this, cells might show double borders. */
+  border-collapse: collapse;
+
+  /* Makes the table stretch across the full width of its container. */
+  width: 100%;
+}
+
+
+/*
+  This rule applies to both <th> (table headers) and <td> (table data cells).
+  Grouping them with a comma means the same style applies to both types of cells.
+*/
+table th, table td {
+  /* Adds a light gray border around each cell, making rows and columns visible. */
+  border: 1px solid #ddd;
+
+  /* Adds internal space inside each cell so text isn’t cramped against the border. */
+  padding: .5rem;
+
+  /* Aligns text to the left side of the cell. 
+     This is standard for most tables containing text. */
+  text-align: left;
+}
+
+
+/*
+  The <footer> is the section at the bottom of the page,
+  often containing small print or contact information.
+*/
+footer {
+  /* Adds space above the footer to separate it from the main content. */
+  margin-top: 2rem;
+
+  /* Sets the text color to a medium gray (#666) — less prominent than black,
+     which is typical for secondary information. */
+  color: #666;
+
+  /* Makes the text slightly smaller than the normal body text,
+     reinforcing that it's less important content. */
+  font-size: .9rem;
+}
