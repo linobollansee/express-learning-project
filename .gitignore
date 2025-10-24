@@ -1,7 +1,18 @@
+# Ignore the node_modules directory (all installed npm packages)
 node_modules
+
+# Ignore environment variable files
 .env
 .env.local
+
+# Ignore build/output directory
 dist
+
+# Ignore npm debug log files
 npm-debug.log
+
+# Ignore macOS system file
 .DS_Store
+
+# Ignore test coverage reports
 coverage
