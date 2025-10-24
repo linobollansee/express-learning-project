@@ -1,0 +1,8 @@
+<% layout('layout') -%>
+<p>Welcome to the Express learning project. Below is a list of sample users served from an in-memory model.</p>
+<ul>
+  <% users.forEach(u => { %>
+    <li><strong><%= u.name %></strong> — <%= u.email %></li>
+  <% }) %>
+</ul>
+<p>Try the JSON API at <code>/api/users</code>.</p>
